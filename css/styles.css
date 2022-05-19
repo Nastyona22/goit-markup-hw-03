@@ -120,18 +120,19 @@ header{
 }
 
 
-.nav-list>.item {
-    margin: 32px 50px 32px 0;
+.nav-list>.item:not(:last-child) {
+    margin-right: 50px;
 }
 
-.list>.item:last-child {
-    margin-right: 0;
-}
 
-.header-contacts>.item:not(:last-child) {
+
+.header-contacts>.item:not(:last-child){
     margin-right: 50px;
 }
 .menu-link{
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     font-weight: 500;
     font-size: 14px;
@@ -174,13 +175,14 @@ header{
     
 }
 .section-hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--backgound-color);
+
        
 }
 .container-hero{
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
+        text-align: center;
 }
 
 .modal-btn{
@@ -211,21 +213,21 @@ header{
 
 /* --------------/HERO---------------*/
 
-/*------------- ADVANTAGES------------- */
+/*------------- BENEFITS------------- */
 
 
-.adv-list{
+.benefit-list{
     display: flex;
     flex-direction: row;
 }
-.adv-list >.item{
+.benefit-list >.item{
     margin-left: auto;
 }
-.adv-list>.item:not(:last-child){
+.benefit-list>.item:not(:last-child){
     margin-right: 30px;
 }
 
-.advantages-title {
+.benefits-title {
     margin-bottom: 10px;
     width: 270px;
 
@@ -246,7 +248,7 @@ header{
 
 
 
-/*------------- /ADVANTAGES------------- */
+/*------------- /BENEFITS------------- */
 
 /*------------------ OUR TEAM---------------- */
 .employees-list{
@@ -255,6 +257,8 @@ width: 270px;
 text-align: center;
 }
 .employees-list >.item{
+padding-bottom: 30px;
+
 background-color: var(--background-main-color);
 border-radius: 0px 0px 4px 4px;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -264,6 +268,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 
 .employees-list .item:not(:last-child){
     margin-right: 30px;
+    
 }
 
 .team-foto{
@@ -280,9 +285,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     font-size: 16px;
     line-height: 1.19;
 }
-.employees-position{
-    margin-bottom: 30px;
-}
+
 .block-employees{
     background-color: var(--background-color-grey);
 
@@ -358,8 +361,8 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 
 
 *.case-info{
-    display: block;
     border: 1px solid #EEEEEE;
+    border-top: 0;
     padding: 20px 24px;
 }
 
@@ -383,6 +386,10 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.logo-footer{
+    margin-bottom: 20px;
+}
 address{
     font-style: inherit;
 }
@@ -392,8 +399,15 @@ address{
 }
 
 .contact-link[target="_blank"]{
+margin-bottom: 9px;
+
 color: var(--primary-text-color-theme-dark);
 }
+
+.contact-link[href="mailto:info@example.com"]{
+    margin-bottom: 9px;
+}
+
 .contact-link:hover,
 .contact-link:focus{
     color: var(--accent-color);
