@@ -105,6 +105,14 @@ header{
     border-bottom: 1px solid #ECECEC;
 }
 
+.site-nav> .logo{
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+
+
 .site-nav,
 .nav-list,
 .header-contacts {
@@ -222,10 +230,13 @@ header{
 }
 .benefit-list >.item{
     margin-left: auto;
+    
 }
 .benefit-list>.item:not(:last-child){
     margin-right: 30px;
 }
+
+
 
 .benefits-title {
     margin-bottom: 10px;
@@ -246,6 +257,9 @@ header{
     padding-top: 0;
 }
 
+.about-foto{
+    display: block;
+}
 
 
 /*------------- /BENEFITS------------- */
@@ -359,6 +373,9 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         margin-right: 0;
 }
 
+.case-list >.item:nth-last-child(-n + 3){
+    margin-bottom: 0;
+}
 
 *.case-info{
     border: 1px solid #EEEEEE;
@@ -388,6 +405,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 }
 
 .logo-footer{
+    display: block;
     margin-bottom: 20px;
 }
 address{
@@ -399,13 +417,11 @@ address{
 }
 
 .contact-link[target="_blank"]{
-margin-bottom: 9px;
-
 color: var(--primary-text-color-theme-dark);
 }
 
-.contact-link[href="mailto:info@example.com"]{
-    margin-bottom: 9px;
+.footer-contact{
+margin-bottom: 9px;
 }
 
 .contact-link:hover,
